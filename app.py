@@ -23,6 +23,6 @@ async def ocr_pdf(file: UploadFile):
     return {"text": full_text}
 
 
-@app.route("/")
+@app.get("/")
 def hello():
     return "OCR service alive"
