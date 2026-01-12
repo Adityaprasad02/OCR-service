@@ -21,3 +21,8 @@ async def ocr_pdf(file: UploadFile):
         full_text += f"\n\n--- PAGE {page_index+1} ---\n{text}"
 
     return {"text": full_text}
+
+
+@app.route("/")
+def hello():
+    return "OCR service alive"
