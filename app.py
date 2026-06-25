@@ -26,3 +26,4 @@ async def ocr_pdf(file: UploadFile):
 @app.get("/")
 def hello():
     return "OCR service alive"
+# ammend try-9
